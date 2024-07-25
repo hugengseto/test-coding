@@ -88,7 +88,7 @@ class PostController extends BaseController
         return view('post/detail', $data);
     }
 
-    public function edit()
+    public function edit($id)
     {
         $data = [
             'title' => 'Create post',

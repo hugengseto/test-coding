@@ -13,7 +13,7 @@
                     <a class="nav-link" href="<?= base_url('/post'); ?>">Post</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Akun</a>
+                    <a class="nav-link" href="<?= base_url('/akun'); ?>">Akun</a>
                 </li>
                 <li class="nav-item">
                     <form action="<?= base_url('/logout'); ?>" method="post">

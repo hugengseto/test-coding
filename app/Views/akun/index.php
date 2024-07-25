@@ -12,17 +12,16 @@
         </nav>
     </div>
 
-    <h1>Post</h1>
-    <a href="<?= base_url('/tambahpost'); ?>" class="btn btn-success">Create Post</a>
+    <h1>Account</h1>
+    <a href="<?= base_url('/tambahakun'); ?>" class="btn btn-success">Create Account</a>
 
     <table class="table">
         <thead>
             <tr>
                 <th>#</th>
-                <th>Title</th>
-                <th>Content</th>
-                <th>Date</th>
                 <th>Username</th>
+                <th>Name</th>
+                <th>Role</th>
                 <th></th>
             </tr>
         </thead>
@@ -32,12 +31,12 @@
             foreach ($post as $row) : ?>
                 <tr>
                     <td><?= $no++ ?></td>
-                    <td><?= $row['title']; ?></td>
-                    <td><?= $row['content']; ?></td>
-                    <td><?= $row['date']; ?></td>
+                    <td><?= $row['username']; ?></td>
+                    <td><?= $row['name']; ?></td>
+                    <td><?= $row['role']; ?></td>
                     <td>
-                        <a href="<?= base_url('detail/'); ?><?= $row['idpost']; ?>">Detail</a>
-                        <a href="<?= base_url('edit/'); ?><?= $row['idpost']; ?>">Edit</a>
+                        <a href="<?= base_url('detail/'); ?><?= $row['username']; ?>">Detail</a>
+                        <a href="<?= base_url('edit/'); ?><?= $row['username']; ?>">Edit</a>
                         <a href="/edit">Hapus</a>
                     </td>
                 </tr>

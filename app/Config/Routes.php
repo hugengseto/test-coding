@@ -10,6 +10,8 @@ $routes->get('/', 'Home::index');
 $routes->get('/login', 'Home::login');
 $routes->get('/post', 'PostController::index');
 $routes->get('/tambahpost', 'PostController::tambah');
+$routes->get('/akun', 'AkunController::index');
+$routes->get('/tambahakun', 'AkunController::tambah');
 $routes->get('/detail/(:num)', 'PostController::detail/$1');
 $routes->get('/edit/(:num)', 'PostController::edit/$1');
 
