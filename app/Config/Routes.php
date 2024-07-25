@@ -18,4 +18,5 @@ $routes->get('/edit/(:num)', 'PostController::edit/$1');
 
 $routes->post('/aksi_login', 'AuthController::auth');
 $routes->post('/aksi_tambah_post', 'PostController::aksi_tambah');
+$routes->post('/aksi_tambah_akun', 'AkunController::aksi_tambah');
 $routes->post('/logout', 'AuthController::logout');

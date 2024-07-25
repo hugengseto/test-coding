@@ -7,15 +7,15 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="<?= base_url(); ?>">Beranda</a></li>
-                <li class="breadcrumb-item"><a href="<?= base_url('/post'); ?>">Post</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Create Post</li>
+                <li class="breadcrumb-item"><a href="<?= base_url('/akun'); ?>">Akun</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Create Account</li>
             </ol>
         </nav>
     </div>
 
     <h1>Create Account</h1>
     <div class="form">
-        <form action="<?= base_url('/aksi_tambah_post'); ?>" method="post">
+        <form action="<?= base_url('/aksi_tambah_akun'); ?>" method="post">
             <div class="mb-3">
                 <label for="username" class="form-label">Username</label>
                 <input type="text" class="form-control" id="username" name="username" aria-describedby="emailHelp">

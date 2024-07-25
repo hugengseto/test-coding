@@ -7,7 +7,7 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="<?= base_url(); ?>">Beranda</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Post</li>
+                <li class="breadcrumb-item active" aria-current="page">Akun</li>
             </ol>
         </nav>
     </div>
